@@ -28,9 +28,13 @@ class LoginPage{
 
     submitLogin(){
         cy.log('CLICK SUBMIT BUTTON');
-        cy.get(loginElements.btnLogin()).should('be.visible').click();
+        cy.get(loginElements.submitLogin()).should('be.visible').click();
     }
 
+    validateLoginPage(){
+        cy.log('VALIDATE LOGIN');
+        cy.get(loginElements.validateDashboard(), {timeout:3000}).should('be.visible').should('exist');
+    }
 
 
 }export default LoginPage

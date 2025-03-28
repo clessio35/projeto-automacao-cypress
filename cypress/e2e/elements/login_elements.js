@@ -2,6 +2,7 @@ class LoginElements {
 
     inputEmail = () => { return '#email' }
     inputPassword = () => { return '#password' }
-    btnLogin = () => { return '#submitBTN' }
-
+    submitLogin = () => { return '#submitBTN' }
+    validateDashboard = () => {return '#navbarNav'}
+    
 } export default LoginElements
