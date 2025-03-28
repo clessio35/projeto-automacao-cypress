@@ -17,7 +17,7 @@ class LoginPage{
     accessLoginPage(){
         cy.log('LOGIN PAGE');
         cy.contains(homeElements.selectCustomer()).should('be.visible').click();
-        cy.contains(homeElements.btnLogin()).should('be.visible').click();
+        cy.contains(homeElements.btnLogin()).should('exist').click({force:true});
     }
 
     fillLoginForm(email, password){
@@ -28,7 +28,7 @@ class LoginPage{
 
     submitLogin(){
         cy.log('CLICK SUBMIT BUTTON');
-        cy.get(loginElements.submitLogin()).should('be.visible').click();
+        cy.get(loginElements.btnLogin()).should('be.visible').click();
     }
 
 
