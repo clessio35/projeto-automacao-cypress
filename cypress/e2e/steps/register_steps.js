@@ -37,6 +37,7 @@ When(/^inserir senha "([^"]*)" e "([^"]*)"$/, (pass, confirmPass) => {
 
 When(/^clico no botao entrar$/, () => {
 	registerPage.btnSubmit();
+    registerPage.selectImage();
 });
 
 Then(/^tenho meu cadastro realizado com sucess$/, () => {

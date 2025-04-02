@@ -62,4 +62,8 @@ class RegisterPage {
         .click({force:true});
     }
 
+    selectImage(){
+        cy.get(registerElements.selectFile()).should('exist').selectFile('cypress/downloads/code.jpeg');
+    }
+
 } export default RegisterPage;
