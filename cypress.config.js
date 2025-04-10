@@ -11,14 +11,4 @@ module.exports = defineConfig({
     },
   },
 });
-module.exports = defineConfig({
-  projectId: 'u5x39s',
-  e2e: {
-    setupNodeEvents(on, config){
 
-    },
-    viewportWidth: 1280,
-    viewportHeight: 720,
-  }
-
-})
